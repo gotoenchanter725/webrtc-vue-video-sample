@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WebRTC Audio call</title>
+</head>
+
+<body>
+
+  <h1></h1>
+  <h2></h2>
+  <button id='changeRoom'>Transfer</button>
+
+  <button id='makeCall'>Call</button>
+  <button id='hangup' disabled>Hang up</button>
+  <button id='reject' disabled>Reject</button>
+  
+  <h4>Users:</h4>
+  <ul id="usersInRoom"></ul>
+  <p>---------</p>
+  
+  <div id="audios">
+    <audio id="localAudio" autoplay controls='controls' playsinline></audio>
+    <div id="audioContainer"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
